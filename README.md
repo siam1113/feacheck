@@ -1,36 +1,33 @@
-# Welcome to Remix + Vite!
+# FeaCheck
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+FeaCheck is an application that lets you manage your feature checks: track which features have been verified, by whom, and what still needs review.
 
-## Development
+## Stack
 
-Run the Vite dev server:
+- Remix (Vite)
+- Tailwind CSS
+- Node.js server
 
-```shellscript
+## Layout
+
+```text
+app/
+  routes/       Application routes and pages
+  components/   Shared UI components
+  root.tsx      App root and layout
+server.js       Node server entry point
+```
+
+## Getting Started
+
+```bash
+npm install
 npm run dev
 ```
 
 ## Deployment
 
-First, build your app for production:
-
-```sh
+```bash
 npm run build
-```
-
-Then run the app in production mode:
-
-```sh
 npm start
 ```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
